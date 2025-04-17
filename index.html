@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Polar</title>
+  <link rel="shortcut icon" href="assets/logo.svg" type="image/x-icon">
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://unpkg.com/lenis@1.2.3/dist/lenis.css">
+</head>
+
+<body>
+  <!-- Hero Section -->
+  <section class="hero">
+    <header class="navbar">
+      <div class="logo"><img src="assets/logo.svg" alt="Polar Logo"></div>
+
+      <div class="menu-toggle">
+        <i class="fas fa-bars"></i>
+      </div>
+
+      <div class="nav-wrapper">
+        <nav class="nav-links">
+          <a href="#">Platform</a>
+          <a href="#">Docs</a>
+          <a href="#">Pricing</a>
+        </nav>
+        <a href="#" class="login-btn">Log in</a>
+      </div>
+    </header>
+
+    <div class="hero-content">
+      <h1>
+        Payment infrastructure<br />
+        for the <span class="highlight">21st century</span>
+      </h1>
+      <p class="subtext">
+        The modern way to sell your SaaS and digital products
+      </p>
+
+      <div class="cta-form">
+        <span class="input-prefix">polar.sh/</span>
+        <input type="text" placeholder="my-app" />
+        <button>Get Started <span class="arrow">></span></button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Features Section -->
+  <section class="features-section">
+    <div class="features-grid">
+
+      <!-- Card 1 -->
+      <div class="feature-card">
+        <div class="icon"><i class="fa-solid fa-file-invoice" style="color: #17181c;"></i></div>
+        <h3>Digital Products & SaaS Billing</h3>
+        <p>Create digital products and SaaS billing with flexible pricing models and seamless payment processing.</p>
+        <ul class="feature-list">
+          <li><i class="fa-solid fa-check" style="color: #10b981;"></i> Subscription Products</li>
+          <li><i class="fa-solid fa-check" style="color: #10b981;"></i> One-time Purchases</li>
+          <li><i class="fa-solid fa-check" style="color: #10b981;"></i> Usage-based billing for metered products</li>
+        </ul>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="feature-card">
+        <div class="icon"><i class="fa-solid fa-infinity" style="color: #17181c;"></i></div>
+        <h3>Benefits Engine</h3>
+        <p>Powerful entitlements engine that automates access to various features.</p>
+        <div class="badge-grid">
+          <span class="badge">License Keys</span>
+          <span class="badge">Downloadables</span>
+          <span class="badge">GitHub Repos</span>
+          <span class="badge">Discord Roles</span>
+        </div>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="feature-card">
+        <div class="icon"><i class="fa-solid fa-user" style="color: #17181c;"></i></div>
+        <h3>Customer Management</h3>
+        <p>Streamlined customer lifecycle management with detailed profiles and analytics.</p>
+        <div class="customer-profile">
+          <img src="assets/user.jpg" alt="User" />
+          <div>
+            <strong>John Doe</strong><br />
+            <small>Premium Plan • Monthly</small>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 4 -->
+      <div class="feature-card">
+        <div class="icon"><i class="fa-solid fa-gauge-simple-high" style="color: #17181c;"></i></div>
+        <h3>Usage Based Billing (Alpha)</h3>
+        <p>Robust event ingestion API that enables precise usage-based billing.</p>
+        <pre class="code-block">
+Ingestion()
+  .strategy(new LLM(openai('gpt-4o')))
+  .ingest('openai-usage')
+      </pre>
+      </div>
+
+      <!-- Card 5 -->
+      <div class="feature-card">
+        <div class="icon"><i class="fa-solid fa-globe" style="color: #17181c;"></i></div>
+        <h3>Global Merchant of Record</h3>
+        <p>Focus on your passion while we handle all the tax compliance.</p>
+        <div class="tax-card">
+          <div class="tax-header">
+            <span>Tax Report 2025</span>
+            <span class="status">Submitted</span>
+          </div>
+          <div class="tax-data">
+            <span>VAT (EU)</span>
+            <span>€2,450.00</span>
+          </div>
+          <div class="tax-data">
+            <span>Sales Tax (US)</span>
+            <span>$3,120.00</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!--code-integration-->
+  <section class="code-integration">
+    <div class="code-container">
+      <div class="code-left">
+        <h2>Sell with 6 lines of code</h2>
+        <p>
+          Polar is the simplest way to integrate payments & billing with your stack
+        </p>
+        <ul class="feature-list">
+          <li><i class="fa-solid fa-check" style="color: #10b981;"></i> Setup in under a minute</li>
+          <li><i class="fa-solid fa-check" style="color: #10b981;"></i> Reliable, secure & fast</li>
+          <li><i class="fa-solid fa-check" style="color: #10b981;"></i> Global Merchant of Record</li>
+        </ul>
+        <div class="button-group">
+          <a href=""><button class="primary-btn">Sell with Polar</button></a>
+          <a href=""><button class="secondary-btn">API Reference</button></a>
+        </div>
+      </div>
+
+      <div class="code-right">
+      </div>
+    </div>
+
+    <div class="tech-logos">
+      <img src="assets/nodejs.svg" alt="Node.js logo" />
+      <img src="assets/python.svg" alt="Python logo" />
+      <img src="assets/php.svg" alt="PHP logo" />
+      <img src="assets/go.svg" alt="Go logo" />
+      <img src="assets/curl.svg" alt="cURL logo" />
+    </div>
+  </section>
+
+  <section class="product-benefits">
+    <div class="benefits-container">
+      <div class="benefits-image">
+      </div>
+
+      <div class="benefits-content">
+        <h2>Automated Product Benefits</h2>
+        <p>Configure automated benefits which are granted to customers when they purchase your products.</p>
+
+        <div class="benefit-item">
+          <h3>License Keys</h3>
+          <p>Sell access to your software with the License Key benefit</p>
+        </div>
+
+        <div class="benefit-item">
+          <h3>Digital Downloads</h3>
+          <p>Make files available for download to your customers</p>
+        </div>
+
+        <div class="benefit-item">
+          <h3>GitHub Repository Access</h3>
+          <p>Grant customers access to your GitHub repositories</p>
+        </div>
+
+        <div class="benefit-item">
+          <h3>Discord Server Access</h3>
+          <p>Setup premium Discord roles for your customers</p>
+        </div>
+
+        <div class="benefit-item">
+          <h3>Custom Benefit</h3>
+          <p>Attach a custom note which is made available to your customers when they purchase your product</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="checkout-section">
+    <div class="checkout-container">
+      <div class="checkout-content">
+        <p class="subheading">Built for simplicity</p>
+        <h2 class="heading">Powerful Checkouts made simple</h2>
+        <a href=""><button class="secondary-btn">Integrate Checkouts</button></a>
+      </div>
+
+      <div class="checkout-preview">
+        <img src="assets/checkout.png" alt="Checkout UI preview" />
+      </div>
+    </div>
+  </section>
+
+  <section class="features-section-2">
+    <div class="features-grid-2">
+      <div class="feature-card-2">
+        <h3><i class="fa-solid fa-cube"></i> Digital Products</h3>
+        <p>Manage and distribute your digital products with our robust platform.</p>
+        <ul>
+          <li><i class="fa-solid fa-check" style="color: #10b981;"></i> Flexible Pricing Models</li>
+          <li><i class="fa-solid fa-check" style="color: #10b981;"></i> Robust Analytics</li>
+          <li><i class="fa-solid fa-check" style="color: #10b981;"></i> Discount Codes</li>
+        </ul>
+        <a href=""><button class="secondary-btn">Learn More ></button></a>
+      </div>
+
+      <div class="feature-card-2">
+        <h3><i class="fa-solid fa-bag-shopping"></i> Simple Checkouts</h3>
+        <p>Streamlined checkouts for a seamless user experience.</p>
+        <ul>
+          <li><i class="fa-solid fa-check" style="color: #10b981;"></i> Custom Checkout Fields</li>
+          <li><i class="fa-solid fa-check" style="color: #10b981;"></i> Automatic Tax Calculation</li>
+          <li><i class="fa-solid fa-check" style="color: #10b981;"></i> Checkout Links & Embeds</li>
+        </ul>
+        <a href=""><button class="secondary-btn">Learn More ></button></a>
+      </div>
+
+      <div class="feature-card-2">
+        <h3><i class="fa-brands fa-github"></i> Open Source Integrations</h3>
+        <p>We believe in building in public & therefore proud to be open source.</p>
+        <ul>
+          <li><i class="fa-solid fa-check" style="color: #10b981;"></i> Raycast Extension</li>
+          <li><i class="fa-solid fa-check" style="color: #10b981;"></i> Framer Plugin</li>
+          <li><i class="fa-solid fa-check" style="color: #10b981;"></i> Zapier Integration</li>
+        </ul>
+        <a href=""><button class="secondary-btn">Learn More ></button></a>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="video-container">
+      <video autoplay loop muted>
+        <source src="assets/video.webm" type="video/webm">
+      </video>
+    </div>
+  </section>
+
+  <section class="pricing-section">
+    <div class="pricing-container">
+      <p class="pricing-subtitle">Early Member</p>
+      <h2 class="pricing-title">Pricing</h2>
+
+      <div class="pricing-grid">
+        <div class="pricing-box">
+          <h3>4% + 40¢ per transaction</h3>
+          <p>We only earn when you do. <a href="#">See how our fees apply.</a></p>
+        </div>
+
+        <div class="pricing-box">
+          <h3>Zero Fixed Costs</h3>
+          <p>No surprises. No hidden or monthly costs.</p>
+        </div>
+
+        <div class="pricing-box">
+          <h3>Volume Pricing</h3>
+          <p>Large or fast-growing business? Reach out to us.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-brand">
+        <div class="logo"><img src="assets/logo.svg" alt="Polar Logo"></div>
+        <p>© Polar Software Inc. 2025</p>
+      </div>
+
+      <div class="footer-links">
+        <div class="footer-column">
+          <h4>Platform</h4>
+          <ul>
+            <li><a href="#">Create an Account</a></li>
+            <li><a href="#">Products & Subscriptions</a></li>
+            <li><a href="#">Checkouts</a></li>
+            <li><a href="#">Customer Portal</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-column">
+          <h4>Company</h4>
+          <ul>
+            <li><a href="#">Vision</a></li>
+            <li><a href="#">Brand Assets</a></li>
+            <li><a href="#">Terms of Service</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-column">
+          <h4>Community</h4>
+          <ul>
+            <li><a href="#">Join our Discord</a></li>
+            <li><a href="#">GitHub</a></li>
+            <li><a href="#">X / Twitter</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-column">
+          <h4>Support</h4>
+          <ul>
+            <li><a href="#">Docs</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/js/all.min.js"
+    integrity="sha512-b+nQTCdtTBIRIbraqNEwsjB6UvL3UEMkXnhzd8awtCYh0Kcsjl9uEgwVFVbhoj3uu1DO1ZMacNvLoyJJiNfcvg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+  <script src="https://unpkg.com/lenis@1.2.3/dist/lenis.min.js"></script>
+
+  <script>
+    //nagivation
+    const toggleBtn = document.querySelector(".menu-toggle");
+    const navWrapper = document.querySelector(".nav-wrapper");
+
+    toggleBtn.addEventListener("click", () => {
+      navWrapper.classList.toggle("show");
+    });
+
+    // Initialize Lenis
+    const lenis = new Lenis();
+
+    // Use requestAnimationFrame to continuously update the scroll
+    function raf(time) {
+      lenis.raf(time);
+      requestAnimationFrame(raf);
+    }
+
+    requestAnimationFrame(raf);
+    // Add Lenis's requestAnimationFrame (raf) method to GSAP's ticker
+    // This ensures Lenis's smooth scroll animation updates on each GSAP tick
+    gsap.ticker.add((time) => {
+      lenis.raf(time * 1000); // Convert time from seconds to milliseconds
+    });
+  </script>
+
+</body>
+
+</html>
